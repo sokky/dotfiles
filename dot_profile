@@ -1,3 +1,8 @@
 export BROWSER=firefox
 export TERM=alacritty
 export QT_QPA_PLATFORMTHEME="qt5ct"
+
+
+# Added by Toolbox App
+export PATH="$PATH:/home/afx/.local/share/JetBrains/Toolbox/scripts"
+
