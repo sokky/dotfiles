@@ -17,8 +17,8 @@
         "hyprland/submap", 
         "hyprland/language", 
         "cpu", 
-        "memory", 
         "temperature", 
+        "memory", 
         "tray", 
         "clock",
         "custom/power"
@@ -118,11 +118,11 @@
         "format": "{usage}% {icon0}",
         "format-icons": [""],
         "tooltip": false,
-        "on-click": "alacritty -e btop"
+        "on-click": "alacritty --title btop -e btop"
     },
     "memory": {
         "format": "{}% ",
-        "on-click": "alacritty -e btop"
+        "on-click": "alacritty --title btop -e btop"
     },
     "temperature": {
         // "thermal-zone": 2,
