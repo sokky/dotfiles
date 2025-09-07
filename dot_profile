@@ -6,3 +6,7 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 # Added by Toolbox App
 export PATH="$PATH:/home/afx/.local/share/JetBrains/Toolbox/scripts"
 
+# オリジナルのシェル格納場所
+export PATH="$PATH:/home/afx/.local/bin"
+
+
