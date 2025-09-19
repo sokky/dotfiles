@@ -1,0 +1,7 @@
+allow_images=true
+hide_scroll=true
+key_submit=KP_Enter,Return
+no_actions=false
+term=alacritty
+mode=drun
+--show
