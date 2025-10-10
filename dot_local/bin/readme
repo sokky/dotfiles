@@ -1,1 +1,2 @@
 ここのフォルダはHyprlandから呼び出すモジュールや、汎用的なコマンドを置く場所
+fishコマンドは.config/fish/functionsにいれる
