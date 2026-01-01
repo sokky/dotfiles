@@ -9,7 +9,7 @@
         "hyprland/workspaces", 
         "idle_inhibitor", 
         "pulseaudio", 
-        "network", 
+        "network",
         "custom/updates"
     ],
     "modules-center": ["hyprland/window"],
