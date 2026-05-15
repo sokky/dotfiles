@@ -1,0 +1,1 @@
+-- ~/.config/uwsm/env に記載すること

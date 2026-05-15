@@ -25,7 +25,7 @@ fi
 
 if [ "$IS_EXCEPTION" = false ]; then
     # 例外でなければウィンドウを閉じる
-    hyprctl dispatch killactive
+    hyprctl dispatch 'hl.dsp.window.close()'
 else
     # 例外の場合は何もしない（通知は任意）
     notify-send "Killing of window (Class: $ACTIVE_CLASS) is blocked."

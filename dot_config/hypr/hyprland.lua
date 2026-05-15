@@ -1,0 +1,10 @@
+-- 基本的には他のファイルを読み込むだけ
+require("config.environment")
+require("config.variables")
+require("config.input")
+require("config.animations")
+require("config.decorations")
+require("config.monitor")
+require("config.autostart")
+require("config.windowrules")
+require("config.keybinds")
