@@ -1,17 +1,17 @@
 local color = require("config.colors")
 
--- Float Necessary Windows
+-- タイトルでの設定
 hl.window_rule({ match = { title = "^(KCalc)$" }, float = true, })
 hl.window_rule({ match = { title = "^(Save File)$" }, float = true, })
 hl.window_rule({ match = { title = "^(Open File)$" }, float = true, })
 hl.window_rule({ match = { title = "^(Vivaldi 設定.*)$" }, float = true, })
-
+-- クラスでの設定
 hl.window_rule({ match = { class = "^(polkit-gnome-authentication-agent-1|hyprpolkitagent|org.org.kde.polkit-kde-authentication-agent-1)(.*)$" }, float = true, })
 hl.window_rule({ match = { class = "^(photoflare)$" }, float = true, })
 hl.window_rule({ match = { class = "^(zenity)$" }, float = true, })
 hl.window_rule({ match = { class = "^(org.cachyos.hello)$" }, float = true, })
 hl.window_rule({ match = { class = "^(org.pulseaudio.pavucontrol)$" }, float = true, })
-
+-- タイトルとクラスの設定
 hl.window_rule({
     match = { 
         class = "^(thunar)$",
@@ -19,7 +19,7 @@ hl.window_rule({
     },
     float = true,
 })
-
+-- サイズ含めた設定
 hl.window_rule({
     match = { 
         class = "^(org.mozilla.Thunderbird)$",
@@ -39,7 +39,7 @@ hl.window_rule({
     size = { 1200, 1080 },
 })
 hl.window_rule({
-    match = { class = "^(MuPDF)$" },
+    match = { class = "^(MuPDF|org.kde.okular)$" },
     float = true,
     size = { 1200, 1400 },
 })
@@ -59,12 +59,6 @@ hl.window_rule({
     float = true,
     size = { 1440, 1080 },
 })
-
--- Increase the opacity
-hl.window_rule({ match = { class = "^(thunar)$" }, opacity = 0.92, })
-hl.window_rule({ match = { class = "^(discord|armcord|WebCord)$" }, opacity = 0.85, })
-hl.window_rule({ match = { class = "^(Alacritty)$" }, opacity = 0.75, animation = "slide", })
-
 -- General window rules
 hl.window_rule({
     match = { title = "^(Picture-in-Picture)$" },
@@ -74,7 +68,7 @@ hl.window_rule({
 })
 hl.window_rule({ match = { title = ".*(保存|開く|設定)$" }, float = true, })
 
--- Decorations related to floating windows
+-- floating windowsの共通した設定
 hl.window_rule({
     match = {
         float = true,
@@ -83,6 +77,10 @@ hl.window_rule({
     border_color = color.cachylblue,
     rounding = 4,
 })
+-- 透明度の設定
+hl.window_rule({ match = { class = "^(thunar)$" }, opacity = 0.8, })
+hl.window_rule({ match = { class = "^(webcord)$" }, opacity = 0.8, })
+hl.window_rule({ match = { class = "^(Alacritty)$" }, opacity = 0.75, animation = "slide", })
 
 -- アプリごとの設定
 require("config.apprules.browser")

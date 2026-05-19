@@ -2,9 +2,9 @@ local color = require("config.colors")
 
 hl.config({
     general = {
-        gaps_in = 2,
-        gaps_out = 2,
-        border_size = 2,
+        gaps_in = 3,
+        gaps_out = 3,
+        border_size = 1,
         layout = dwindle,
 
         col = {

@@ -58,12 +58,12 @@ hl.on("hyprland.start", function()
         })
     )
     hl.dispatch(
-        hl.dsp.exec_cmd("sleep 4; uwsm app -- webcord", {
+        hl.dsp.exec_cmd("sleep 3; uwsm app -- webcord", {
             workspace = "3 silent"
         })
     )
     hl.dispatch(
-        hl.dsp.exec_cmd("sleep 8; uwsm app -- " .. def.filemanager, {
+        hl.dsp.exec_cmd("sleep 6; uwsm app -- " .. def.filemanager, {
             workspace = "3 silent"
         })
     )
