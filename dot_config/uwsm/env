@@ -1,0 +1,9 @@
+export HYPRCURSOR_SIZE=48
+export HYPRCURSOR_THEME=Nordzy-hyprcursors-white
+export XCURSOR_SIZE=48
+export QT_CURSOR_SIZE=48
+#export GTK_IM_MODULE=fcitx
+#export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export ELECTRON_OZONE_PLATFORM_HINT=wayland
+

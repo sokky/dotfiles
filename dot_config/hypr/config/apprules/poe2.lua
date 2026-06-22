@@ -7,3 +7,8 @@ hl.window_rule({
     pseudo = true,
     center = true,
 })
+
+hl.window_rule({ 
+    match = { class = "^(path of building-poe2.exe)$" }, 
+    float = true,
+})

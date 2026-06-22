@@ -54,7 +54,7 @@ hl.bind("ALT + Tab",
         "grep 'class:' |",
         "awk -F ': ' '{print $2}' |",
         def.launcher .. " --dmenu --width 600 |",
-        "xargs -i hyprctl dispatch focuswindow class:{}",
+        [[xargs -i hyprctl dispatch "hl.dsp.focus({ window = 'class:{}' })"]],
     }, " ")
 ))
 

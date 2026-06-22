@@ -57,8 +57,14 @@ hl.on("hyprland.start", function()
             workspace = "3 silent"
         })
     )
+    -- hl.dispatch(
+    --     hl.dsp.exec_cmd("sleep 3; uwsm app -- webcord", {
+    --         workspace = "3 silent"
+    --     })
+    -- )
+    -- 暫定
     hl.dispatch(
-        hl.dsp.exec_cmd("sleep 3; uwsm app -- webcord", {
+        hl.dsp.exec_cmd("sleep 3; uwsm app -- electron42 /usr/lib/webcord ", {
             workspace = "3 silent"
         })
     )
