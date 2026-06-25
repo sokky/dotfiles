@@ -29,7 +29,7 @@ hl.on("hyprland.start", function()
 
     -- Input-Remapper
     -- 何故かAutoloadが効かないため手動で
-    hl.exec_cmd("input-remapper-control --command stop-all && input-remapper-control --command autoload")
+    -- hl.exec_cmd("input-remapper-control --command stop-all && input-remapper-control --command autoload")
 
     -- コピペ管理
     hl.exec_cmd("uwsm app -- wl-paste --type text --watch cliphist store")
@@ -57,6 +57,11 @@ hl.on("hyprland.start", function()
             workspace = "3 silent"
         })
     )
+    hl.dispatch(
+        hl.dsp.exec_cmd("sleep 3; uwsm app -- " .. def.filemanager, {
+            workspace = "3 silent"
+        })
+    )
     -- hl.dispatch(
     --     hl.dsp.exec_cmd("sleep 3; uwsm app -- webcord", {
     --         workspace = "3 silent"
@@ -64,14 +69,10 @@ hl.on("hyprland.start", function()
     -- )
     -- 暫定
     hl.dispatch(
-        hl.dsp.exec_cmd("sleep 3; uwsm app -- electron42 /usr/lib/webcord ", {
+        hl.dsp.exec_cmd("sleep 6; uwsm app -- electron42 /usr/lib/webcord ", {
             workspace = "3 silent"
         })
     )
-    hl.dispatch(
-        hl.dsp.exec_cmd("sleep 6; uwsm app -- " .. def.filemanager, {
-            workspace = "3 silent"
-        })
-    )
+
 
 end)

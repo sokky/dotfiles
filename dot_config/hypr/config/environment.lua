@@ -1,1 +1,1 @@
--- ~/.config/uwsm/env に記載すること
+-- 環境変数は ~/.config/uwsm/env に記載すること

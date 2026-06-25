@@ -5,10 +5,10 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("uwsm app -- " .. def.terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("kill-active-except.sh " .. def.kill_exception))
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("uwsm stop"))
-hl.bind(mainMod .. " + H", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("wofi-uwsm.sh"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + K", hl.dsp.window.float({ action = "toggle" }))
 
 -- Screenshot
 hl.bind(mainMod .. " + p", hl.dsp.exec_cmd(def.shot_region))
@@ -22,7 +22,7 @@ hl.bind(mainMod .. " + V",
     hl.dsp.exec_cmd(table.concat({
         "pidof " .. def.launcher .. " ||",
         "cliphist list |", 
-        def.launcher .. "--dmenu --width 1000 |",
+        def.launcher .. " --dmenu --width 1000 |",
         "cliphist decode |",
         "wl-copy",
     }, " ")
@@ -46,6 +46,10 @@ hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + right",  hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
+hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + L",  hl.dsp.focus({ direction = "right" }))
+hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ direction = "left" }))
+hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ direction = "right" }))
 -- WindowsみたいなAltTab
 hl.bind("ALT + Tab", 
     hl.dsp.exec_cmd(table.concat({
@@ -80,8 +84,6 @@ end
 -- Scroll through existing workspaces with mainMod + , or .
 hl.bind(mainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + COMMA", hl.dsp.focus({ workspace = "e-1" }))
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 
 -- ======= Additional Settings =======
 hl.config({

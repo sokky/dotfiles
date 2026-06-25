@@ -73,4 +73,9 @@ hl.config({
         new_status = master,
         special_scale_factor = 0.8,
     },
+
+    scrolling = {
+        column_width = 0.5,
+        direction = "right",
+    },
 })

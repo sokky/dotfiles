@@ -114,6 +114,7 @@ for _, ws in ipairs(w_HDMIA5) do
         monitor = "HDMI-A-5",
     })
 end
+hl.workspace_rule({ workspace = "2", layout = "scrolling" })
 
 -- layer
 hl.layer_rule({
