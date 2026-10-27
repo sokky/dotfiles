@@ -12,3 +12,8 @@ hl.window_rule({
     match = { class = "^(path of building.exe)$" }, 
     float = true,
 })
+
+hl.window_rule({ 
+    match = { title = "^(ぽえとれ)$" }, 
+    float = true,
+})

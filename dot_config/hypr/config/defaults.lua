@@ -7,8 +7,9 @@ local def = {
 
     -- Startup
     firefox = "firefox",
-    chromium = "chromium --ozone-platform-hint=auto",
-    vivaldi =  "vivaldi-stable --ozone-platform-hint=auto",
+    -- chromium = "chromium --ozone-platform-hint=auto",
+    chromium = "chromium",
+    vivaldi =  "vivaldi-stable",
     steam = "steam",
     thunderbird = "thunderbird",
 

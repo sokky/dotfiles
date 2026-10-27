@@ -50,6 +50,9 @@ hl.bind(mainMod .. " + H", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + L",  hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ direction = "left" }))
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ direction = "right" }))
+-- ウィンドウの入れ替え
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.layout( "swapcol l"))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.layout( "swapcol r"))
 -- WindowsみたいなAltTab
 hl.bind("ALT + Tab", 
     hl.dsp.exec_cmd(table.concat({
